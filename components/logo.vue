@@ -1,5 +1,5 @@
 <template>
-  <div class="inline-flex flex-col items-end">
+  <nuxt-link to="/" class="inline-flex flex-col items-end">
     <div class="flex items-center text-xl lg:text-3xl font-semibold relative">
       <span class="relative z-10"> Nice Stuff </span>
       <span
@@ -7,9 +7,9 @@
       ></span>
     </div>
     <div class="text-slate-500 font-light -mt-1 text-xs lg:text-base">
-      Whitepaper
+      Paper
     </div>
-  </div>
+  </nuxt-link>
 </template>
 
 <script>

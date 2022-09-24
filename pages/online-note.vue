@@ -1,9 +1,11 @@
 <template>
   <div>
     <!-- Tool Name  -->
-    <h1 class="lg:text-xl font-medium">Whitepaper</h1>
+    <h1 class="lg:text-xl font-medium">Online Note</h1>
     <p class="text-sm text-slate-500">
-      online whitepaper or board tool for you fast and quick notes or memo
+      We offer you the free online tool, without signup. that helps you to write
+      on a white paper or board so you can save your thoughts and memos and back
+      to them anytime since we store them on your browser.
     </p>
 
     <div class="mb-4">
@@ -48,6 +50,17 @@
 <script>
 import { v4 as uuidv4 } from "uuid";
 export default {
+  head: {
+    title: "Free online note taking writer",
+    meta: [
+      {
+        hid: "description",
+        name: "description",
+        content:
+          "Best digital online notepad taking tool, with ability to write on a white paper board. Save and dark modes supported",
+      },
+    ],
+  },
   data() {
     return {
       body: null,
