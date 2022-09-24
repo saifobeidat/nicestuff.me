@@ -44,7 +44,7 @@ export default {
   buildModules: ["@nuxt/postcss8"],
 
   // Modules: https://go.nuxtjs.dev/config-modules
-  modules: ["cookie-universal-nuxt"],
+  modules: ["cookie-universal-nuxt", "@nuxtjs/gtm"],
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
@@ -54,5 +54,9 @@ export default {
         autoprefixer: {},
       },
     },
+  },
+  gtm: {
+    id: "G-DQLZ193RRE",
+    enabled: true,
   },
 };
