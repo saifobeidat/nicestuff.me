@@ -14,9 +14,9 @@
         <nuxt-link to="/online-note" class="text-blue-600"> Paper </nuxt-link>
       </div>
       <div>
-        <span>
-          Whiteboard <span class="text-slate-600 text-sm">(Soon)</span>
-        </span>
+        <nuxt-link to="/online-board" class="text-blue-600">
+          Online Whiteboard
+        </nuxt-link>
       </div>
 
       <div>
