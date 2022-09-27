@@ -75,14 +75,19 @@
   </div>
 </template>
 
-<script>
-import VueDrawingCanvas from "vue-drawing-canvas";
-import Vue from "vue";
-import VueCompositionApi from "@vue/composition-api";
+<script type="module">
+// import VueDrawingCanvas from "vue-drawing-canvas";
+// import Vue from "vue";
+// import VueCompositionApi from "@vue/composition-api";
 
-Vue.use(VueCompositionApi);
+// Vue.use(VueCompositionApi);
+import VueDrawingCanvas from "vue-drawing-canvas/dist/vue-drawing-canvas.esm";
 
 export default {
+  components: {
+    "vue-drawing-canvas": VueDrawingCanvas,
+  },
+  setup: () => {},
   head: {
     title: "Free online white board drawer",
     meta: [
@@ -95,9 +100,7 @@ export default {
     ],
   },
   name: "MyComponent",
-  components: {
-    VueDrawingCanvas,
-  },
+
   data() {
     return {
       width: 0,
