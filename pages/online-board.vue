@@ -1,11 +1,9 @@
 <template>
   <div>
     <!-- Tool Name  -->
-    <h1 class="lg:text-xl font-medium">Online whiteboard</h1>
+    <h1 class="lg:text-xl font-medium">{{ $t("onlineboard.heading") }}</h1>
     <p class="text-xs lg:text-sm text-slate-500">
-      We offer you a free online white board (blank paper), without signup. that
-      helps you to draw or sketch on a white paper or board so you can save your
-      thoughts and memos and back
+      {{ $t("onlinenote.paragragh") }}
     </p>
 
     <div class="mb-1 lg:mb-4">
@@ -44,7 +42,7 @@
           />
         </svg>
 
-        <span> Undo </span>
+        <span> {{ $t("actions.undo") }} </span>
       </button>
 
       <span class="mx-2"></span>
@@ -69,7 +67,7 @@
             d="M8 4.466V.534a.25.25 0 0 1 .41-.192l2.36 1.966c.12.1.12.284 0 .384L8.41 4.658A.25.25 0 0 1 8 4.466z"
           />
         </svg>
-        <span> Redo </span>
+        <span> {{ $t("actions.redo") }} </span>
       </button>
     </div>
   </div>

@@ -2,40 +2,58 @@ export default {
   // Target: https://go.nuxtjs.dev/config-target
   target: "static",
 
-  // Global page headers: https://go.nuxtjs.dev/config-head
-  head: {
-    title: "Nice Stuff",
-    htmlAttrs: {
-      lang: "en",
+  head() {
+    let dir = this.$i18n.locales.find((x) => x.code === this.$i18n.locale).dir;
+    const i18nHead = this.$nuxtI18nHead({ addSeoAttributes: true });
+    return {
+      htmlAttrs: {
+        dir: dir,
+        myAttribute: "My Value",
+        ...i18nHead.htmlAttrs,
+      },
+      meta: [
+        {
+          hid: "description",
+          name: "description",
+          content: "White Board, Online note",
+        },
+        ...i18nHead.meta,
+      ],
+      link: [
+        {
+          rel: "preconnect",
+          href: "https://fonts.googleapis.com",
+        },
+        {
+          rel: "preconnect",
+          href: "https://fonts.gstatic.com",
+        },
+        {
+          rel: "stylesheet",
+          href: "https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;500;600;700;800&display=swap",
+        },
+        ...i18nHead.link,
+      ],
+    };
+  },
+  i18n: {
+    locales: [
+      { code: "en", iso: "en", file: "en.js", dir: "ltr" },
+      // { code: "ar", iso: "ar", file: "ar.js", dir: "rtl" },
+    ],
+    defaultLocale: "en",
+    vueI18n: {
+      fallbackLocale: "en",
     },
-    meta: [
-      { charset: "utf-8" },
-      { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { hid: "description", name: "description", content: "" },
-      { name: "format-detection", content: "telephone=no" },
-    ],
-    link: [
-      { rel: "icon", type: "image/x-icon", href: "/favicon.ico" },
-      {
-        rel: "preconnect",
-        href: "https://fonts.googleapis.com",
-      },
-      {
-        rel: "preconnect",
-        href: "https://fonts.gstatic.com",
-      },
-      {
-        rel: "stylesheet",
-        href: "https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;500;600;700;800&display=swap",
-      },
-    ],
+    strategy: "prefix_and_default",
+    langDir: "i18n/",
   },
 
   // Global CSS: https://go.nuxtjs.dev/config-css
   css: ["@/assets/css/main.css"],
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
-  plugins: ["~/plugins/composition-api.js"],
+  plugins: ["~/plugins/composition-api.js", "~/plugins/gtag.js"],
 
   // Auto import components: https://go.nuxtjs.dev/config-components
   components: true,
@@ -44,7 +62,7 @@ export default {
   buildModules: ["@nuxt/postcss8"],
 
   // Modules: https://go.nuxtjs.dev/config-modules
-  modules: ["cookie-universal-nuxt", "@nuxtjs/gtm"],
+  modules: ["cookie-universal-nuxt", "@nuxtjs/i18n"],
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
@@ -54,9 +72,5 @@ export default {
         autoprefixer: {},
       },
     },
-  },
-  gtm: {
-    id: "G-DQLZ193RRE",
-    enabled: true,
   },
 };

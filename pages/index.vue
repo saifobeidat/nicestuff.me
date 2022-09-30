@@ -2,20 +2,21 @@
   <div class="text-center">
     <h1>Nice stuff</h1>
     <div>
-      This is nice stuff website, we will be offering you multiple cool online
-      tools
+      {{ $t("home.heading") }}
     </div>
 
     <br />
 
     <div>
-      <h2 class="font-semibold">Our tools:</h2>
+      <h2 class="font-semibold">{{ $t("home.ourstools") }}</h2>
       <div>
-        <nuxt-link to="/online-note" class="text-blue-600"> Paper </nuxt-link>
+        <nuxt-link to="/online-note" class="text-blue-600">
+          {{ $t("onlinenote.meta.title") }}
+        </nuxt-link>
       </div>
       <div>
         <nuxt-link to="/online-board" class="text-blue-600">
-          Online Whiteboard
+          {{ $t("onlineboard.meta.title") }}
         </nuxt-link>
       </div>
 
@@ -29,5 +30,17 @@
 <script>
 export default {
   name: "IndexPage",
+  head() {
+    return {
+      title: `${this.$t("home.meta.title")}`,
+      meta: [
+        {
+          hid: "description",
+          name: "description",
+          content: `${this.$t("home.meta.description")}`,
+        },
+      ],
+    };
+  },
 };
 </script>

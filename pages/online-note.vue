@@ -1,11 +1,11 @@
 <template>
   <div>
     <!-- Tool Name  -->
-    <h1 class="lg:text-xl font-medium">Online Note</h1>
+    <h1 class="lg:text-xl font-medium">
+      {{ $t("onlinenote.heading") }}
+    </h1>
     <p class="text-xs lg:text-sm text-slate-500">
-      We offer you the free online tool, without signup. that helps you to write
-      on a white paper or board so you can save your thoughts and memos and back
-      to them anytime since we store them on your browser.
+      {{ $t("onlinenote.paragragh") }}
     </p>
 
     <div class="mb-1 lg:mb-4">
@@ -53,16 +53,17 @@
 <script>
 import { v4 as uuidv4 } from "uuid";
 export default {
-  head: {
-    title: "Free online note taking writer",
-    meta: [
-      {
-        hid: "description",
-        name: "description",
-        content:
-          "Best digital online notepad taking tool, with ability to write on a white paper board. Save and dark modes supported",
-      },
-    ],
+  head() {
+    return {
+      title: `${this.$t("onlinenote.meta.title")}`,
+      meta: [
+        {
+          hid: "description",
+          name: "description",
+          content: `${this.$t("onlinenote.meta.description")}`,
+        },
+      ],
+    };
   },
   data() {
     return {
