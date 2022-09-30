@@ -3,12 +3,12 @@ export default {
   target: "static",
 
   head() {
-    let dir = this.$i18n.locales.find((x) => x.code === this.$i18n.locale).dir;
-    const i18nHead = this.$nuxtI18nHead({ addSeoAttributes: true });
+    const i18nHead = this.$nuxtI18nHead({
+      addSeoAttributes: true,
+      addDirAttribute: true,
+    });
     return {
       htmlAttrs: {
-        dir: dir,
-        myAttribute: "My Value",
         ...i18nHead.htmlAttrs,
       },
       meta: [
