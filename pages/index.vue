@@ -1,27 +1,22 @@
 <template>
   <div class="text-center">
-    <h1>Nice stuff</h1>
     <div>
-      {{ $t("home.heading") }}
-    </div>
-
-    <br />
-
-    <div>
-      <h2 class="font-semibold">{{ $t("home.ourstools") }}</h2>
       <div>
-        <nuxt-link to="/online-note" class="text-blue-600">
+        <nuxt-link to="/online-note" class="text-blue-600 text-xl">
           {{ $t("onlinenote.meta.title") }}
         </nuxt-link>
-      </div>
-      <div>
-        <nuxt-link to="/online-board" class="text-blue-600">
-          {{ $t("onlineboard.meta.title") }}
-        </nuxt-link>
+        <p>
+          Write your notes or memo on a paper or board, so you can save your
+          thoughts back to them anytime
+        </p>
       </div>
 
+      <br /><br />
       <div>
-        <span> Piano <span class="text-slate-600 text-sm">(Soon)</span> </span>
+        <nuxt-link to="/online-board" class="text-blue-600 text-xl">
+          {{ $t("onlineboard.meta.title") }}
+        </nuxt-link>
+        <p>Draw or sketch on a white board online and free without signup</p>
       </div>
     </div>
   </div>

@@ -2,11 +2,8 @@ export default {
   home: {
     meta: {
       title: "Nice Stuff",
-      description: "White Board, Online note",
+      description: "Free Online White Board and Free Online note taking",
     },
-    heading:
-      "This is nice stuff website, we will be offering you multiple cool online tools",
-    ourstools: "Our tools:",
   },
   onlineboard: {
     meta: {
@@ -16,7 +13,7 @@ export default {
     },
     heading: "Online white board drawer",
     paragragh:
-      "We offer you a free online white board (blank paper), without signup. that helps you to draw or sketch on a white paper or board so you can save your thoughts and memos and back",
+      "We offer you a free online white board (blank paper), without signup. that helps you to draw or sketch on a white paper or board",
   },
   onlinenote: {
     meta: {
