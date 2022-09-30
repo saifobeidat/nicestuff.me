@@ -20,7 +20,7 @@ export default {
   },
   onlinenote: {
     meta: {
-      title: "Online Note",
+      title: "Free Online Note Taking",
       description:
         "Best digital online notepad taking tool, with ability to write on a white paper board. Save and dark modes supported",
     },
