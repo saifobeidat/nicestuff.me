@@ -12,6 +12,12 @@ export default {
         ...i18nHead.htmlAttrs,
       },
       meta: [
+        { charset: "utf-8" },
+        {
+          name: "viewport",
+          content:
+            "initial-scale=1, maximum-scale=5, minimum-scale=1, width=device-width",
+        },
         {
           hid: "description",
           name: "description",
