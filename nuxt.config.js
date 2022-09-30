@@ -3,10 +3,10 @@ export default {
   target: "static",
 
   head() {
-    const i18nHead = this.$nuxtI18nHead({
-      addSeoAttributes: true,
-      addDirAttribute: true,
-    });
+    const i18nHead = this.$nuxtI18nHead
+      ? this.$nuxtI18nHead({ addSeoAttributes: true, addDirAttribute: true })
+      : { htmlAttrs: [], meta: [], link: [] };
+
     return {
       htmlAttrs: {
         ...i18nHead.htmlAttrs,
@@ -37,6 +37,7 @@ export default {
     };
   },
   i18n: {
+    baseUrl: "http://nicestuff.me",
     locales: [
       { code: "en", iso: "en", file: "en.js", dir: "ltr" },
       // { code: "ar", iso: "ar", file: "ar.js", dir: "rtl" },
@@ -45,7 +46,7 @@ export default {
     vueI18n: {
       fallbackLocale: "en",
     },
-    strategy: "prefix_and_default",
+    strategy: "prefix_except_default",
     langDir: "i18n/",
   },
 
