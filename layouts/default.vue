@@ -38,6 +38,7 @@
       </nav>
     </aside>
 
+    <!-- Core  -->
     <div class="relative h-screen p-5 lg:p-10">
       <Transition name="fade">
         <span
@@ -53,6 +54,15 @@
       </div>
       <div class="py-3"></div>
       <Nuxt />
+
+      <nav v-if="$route.path !== '/'" class="flex py-4 justify-center">
+        <nuxt-link to="/online-note" class="text-blue-600 text-sm px-2">
+          {{ $t("menu.onlinenote") }}
+        </nuxt-link>
+        <nuxt-link to="/online-board" class="text-blue-600 text-sm px-2">
+          {{ $t("menu.onlineboard") }}
+        </nuxt-link>
+      </nav>
     </div>
   </div>
 </template>

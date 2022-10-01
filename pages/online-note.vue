@@ -4,13 +4,7 @@
     <h1 class="lg:text-xl font-medium">
       {{ $t("onlinenote.heading") }}
     </h1>
-    <p class="text-xs lg:text-sm text-slate-500">
-      {{ $t("onlinenote.paragragh") }}
-    </p>
 
-    <div class="mb-1 lg:mb-4">
-      <!-- Space  -->
-    </div>
     <!--  -->
     <div
       class="relative flex items-center justify-end text-slate-600"
@@ -46,7 +40,10 @@
       </span>
     </div>
 
-    <p></p>
+    <br />
+    <p class="text-xs lg:text-sm text-slate-500">
+      {{ $t("onlinenote.paragragh") }}
+    </p>
   </div>
 </template>
 

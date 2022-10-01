@@ -2,9 +2,6 @@
   <div>
     <!-- Tool Name  -->
     <h1 class="lg:text-xl font-medium">{{ $t("onlineboard.heading") }}</h1>
-    <p class="text-xs lg:text-sm text-slate-500">
-      {{ $t("onlinenote.paragragh") }}
-    </p>
 
     <div class="mb-1 lg:mb-4">
       <!-- Space  -->
@@ -70,6 +67,12 @@
         <span> {{ $t("actions.redo") }} </span>
       </button>
     </div>
+
+    <br />
+    <br />
+    <p class="text-xs lg:text-sm text-slate-500">
+      {{ $t("onlinenote.paragragh") }}
+    </p>
   </div>
 </template>
 
