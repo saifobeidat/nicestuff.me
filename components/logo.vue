@@ -6,9 +6,9 @@
         class="inline-block absolute ltr:-left-[7px] rtl:-right-[7px] rounded-full lg:h-14 lg:w-14 h-10 w-10 bg-color1"
       ></span>
     </div>
-    <div class="text-slate-500 font-light -mt-1 text-xs lg:text-base">
+    <!-- <div class="text-slate-500 font-light -mt-1 text-xs lg:text-base">
       Paper
-    </div>
+    </div> -->
   </nuxt-link>
 </template>
 
