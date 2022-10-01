@@ -90,13 +90,13 @@ export default {
   },
   setup: () => {},
   head: {
-    title: "Free online white board drawer",
+    title: "Free online whiteboard drawer",
     meta: [
       {
         hid: "description",
         name: "description",
         content:
-          "Best digital online white board tool, Draw now on blank board or paper.",
+          "Best digital online whiteboard tool, Draw now on blank board or paper.",
       },
     ],
   },

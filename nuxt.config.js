@@ -21,7 +21,7 @@ export default {
         {
           hid: "description",
           name: "description",
-          content: "White Board, Online note",
+          content: "Whiteboard Drawer, Note Taking",
         },
         ...i18nHead.meta,
       ],

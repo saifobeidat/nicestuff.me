@@ -2,18 +2,18 @@ export default {
   home: {
     meta: {
       title: "Nice Stuff",
-      description: "Free Online White Board and Free Online note taking",
+      description: "Free Online whiteboard and Free Online note taking",
     },
   },
   onlineboard: {
     meta: {
-      title: "Free online white board drawer",
+      title: "Free online whiteboard drawer",
       description:
-        "Best digital online white board tool, Draw now on blank board or paper.",
+        "Best digital online whiteboard tool, Draw now on blank board or paper.",
     },
-    heading: "Online white board drawer",
+    heading: "Online whiteboard drawer",
     paragragh:
-      "We offer you a free online white board (blank paper), without signup. that helps you to draw or sketch on a white paper or board",
+      "We offer you a free online whiteboard (blank paper), without signup. that helps you to draw or sketch on a white paper or board",
   },
   onlinenote: {
     meta: {
@@ -26,8 +26,8 @@ export default {
       "We offer you the free online tool, without signup. that helps you to write on a white paper or board so you can save your thoughts and memos and back to them anytime since we store them on your browser.",
   },
   menu: {
-    onlineboard: "Online Board",
-    onlinenote: "Online Note",
+    onlineboard: "Online whiteboard drawer",
+    onlinenote: "Online note taking",
   },
   actions: {
     undo: "Undo",

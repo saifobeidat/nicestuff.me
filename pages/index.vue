@@ -16,7 +16,7 @@
         <nuxt-link to="/online-board" class="text-blue-600 text-xl">
           {{ $t("onlineboard.meta.title") }}
         </nuxt-link>
-        <p>Draw or sketch on a white board online and free without signup</p>
+        <p>Draw or sketch on a whiteboard online and free without signup</p>
       </div>
     </div>
   </div>
