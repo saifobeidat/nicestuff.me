@@ -25,6 +25,10 @@ export default {
     paragragh:
       "We offer you the free online tool, without signup. that helps you to write on a white paper or board so you can save your thoughts and memos and back to them anytime since we store them on your browser.",
   },
+  menu: {
+    onlineboard: "Online Board",
+    onlinenote: "Online Note",
+  },
   actions: {
     undo: "Undo",
     redo: "Redo",
