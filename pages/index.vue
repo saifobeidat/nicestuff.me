@@ -1,6 +1,11 @@
 <template>
   <div class="text-center">
     <div>
+      <h1 class="text-lg">
+        {{ $t("home.meta.title") }}
+      </h1>
+
+      <br /><br />
       <div>
         <nuxt-link to="/online-note" class="text-blue-600 text-xl">
           {{ $t("onlinenote.meta.title") }}
