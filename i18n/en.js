@@ -1,7 +1,7 @@
 export default {
   home: {
     meta: {
-      title: "Nice Stuff",
+      title: "Online whiteboard, Note taking - Nice Stuff",
       description: "Free Online whiteboard and Free Online note taking",
     },
   },
