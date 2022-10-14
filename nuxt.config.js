@@ -69,7 +69,7 @@ export default {
   buildModules: ["@nuxt/postcss8"],
 
   // Modules: https://go.nuxtjs.dev/config-modules
-  modules: ["cookie-universal-nuxt", "@nuxtjs/i18n"],
+  modules: ["cookie-universal-nuxt", "@nuxtjs/i18n", "@nuxtjs/sitemap"],
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
@@ -80,4 +80,7 @@ export default {
       },
     },
   },
+  // router: {
+  //   trailingSlash: false,
+  // },
 };
