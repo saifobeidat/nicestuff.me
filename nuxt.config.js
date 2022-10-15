@@ -54,11 +54,11 @@ export default {
     },
     strategy: "prefix_except_default",
     langDir: "i18n/",
-    trailingSlashes: false,
   },
   sitemap: {
     hostname: "http://nicestuff.me",
     // gzip: true,
+    // trailingSlashes: true,
   },
 
   // Global CSS: https://go.nuxtjs.dev/config-css
@@ -84,9 +84,5 @@ export default {
         autoprefixer: {},
       },
     },
-  },
-  router: {
-    middleware: "trailingSlashRedirect",
-    trailingSlash: false,
   },
 };
