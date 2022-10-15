@@ -7,7 +7,7 @@
 
       <br /><br />
       <div>
-        <nuxt-link to="/online-note" class="text-blue-600 text-xl">
+        <nuxt-link to="/online-note/" class="text-blue-600 text-xl">
           {{ $t("onlinenote.meta.title") }}
         </nuxt-link>
         <p>
@@ -18,7 +18,7 @@
 
       <br /><br />
       <div>
-        <nuxt-link to="/online-board" class="text-blue-600 text-xl">
+        <nuxt-link to="/online-board/" class="text-blue-600 text-xl">
           {{ $t("onlineboard.meta.title") }}
         </nuxt-link>
         <p>Draw or sketch on a whiteboard online and free without signup</p>
