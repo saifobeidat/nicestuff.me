@@ -7,9 +7,12 @@ export default {
       ? this.$nuxtI18nHead({ addSeoAttributes: true, addDirAttribute: true })
       : { htmlAttrs: [], meta: [], link: [] };
 
-    const { path } = this.$route;
-    const pathWithSlash = path.endsWith("/") ? path : `${path}/`;
-    let canonical = `http://nicestuff.me${pathWithSlash}`;
+    const path = this.$route ? this.$route.path : null;
+    let canonical;
+    if (path) {
+      const pathWithSlash = path.endsWith("/") ? path : `${path}/`;
+      canonical = `http://nicestuff.me${pathWithSlash}`;
+    }
 
     return {
       htmlAttrs: {
