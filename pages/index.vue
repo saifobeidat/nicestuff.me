@@ -22,6 +22,7 @@
           {{ $t("onlineboard.meta.title") }}
         </nuxt-link>
         <p>Draw or sketch on a whiteboard online and free without signup</p>
+        <p>Saif</p>
       </div>
     </div>
   </div>
@@ -41,9 +42,6 @@ export default {
         },
       ],
     };
-  },
-  mounted() {
-    console.log("mounted");
   },
 };
 </script>
