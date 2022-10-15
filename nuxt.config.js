@@ -54,6 +54,7 @@ export default {
     },
     strategy: "prefix_except_default",
     langDir: "i18n/",
+    trailingSlashes: false,
   },
   sitemap: {
     hostname: "http://nicestuff.me",
@@ -83,5 +84,9 @@ export default {
         autoprefixer: {},
       },
     },
+  },
+  router: {
+    middleware: "trailingSlashRedirect",
+    trailingSlash: false,
   },
 };
