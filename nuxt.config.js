@@ -7,6 +7,10 @@ export default {
       ? this.$nuxtI18nHead({ addSeoAttributes: true, addDirAttribute: true })
       : { htmlAttrs: [], meta: [], link: [] };
 
+    const { path } = this.$route;
+    const pathWithSlash = path.endsWith("/") ? path : `${path}/`;
+    let canonical = `http://nicestuff.me${pathWithSlash}`;
+
     return {
       htmlAttrs: {
         ...i18nHead.htmlAttrs,
@@ -26,6 +30,7 @@ export default {
         ...i18nHead.meta,
       ],
       link: [
+        { rel: "canonical", href: canonical },
         {
           rel: "preconnect",
           href: "https://fonts.googleapis.com",
@@ -58,7 +63,7 @@ export default {
   sitemap: {
     hostname: "http://nicestuff.me",
     // gzip: true,
-    // trailingSlashes: true,
+    trailingSlashes: true,
   },
 
   // Global CSS: https://go.nuxtjs.dev/config-css
