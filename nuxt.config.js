@@ -48,7 +48,7 @@ export default {
           rel: "stylesheet",
           href: "https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;500;600;700;800&display=swap",
         },
-        // ...i18nHead.link,
+        ...i18nHead.link,
       ],
     };
   },
