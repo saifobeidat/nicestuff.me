@@ -7,12 +7,14 @@ export default {
       ? this.$nuxtI18nHead({ addSeoAttributes: true, addDirAttribute: true })
       : { htmlAttrs: [], meta: [], link: [] };
 
-    const path = this.$route ? this.$route.path : null;
-    let canonical;
-    if (path) {
-      const pathWithSlash = path.endsWith("/") ? path : `${path}/`;
-      canonical = `http://nicestuff.me${pathWithSlash}`;
-    }
+    // i18nHead.link = i18nHead.link.filter((e) => e.rel !== "canonical");
+
+    // const path = this.$route ? this.$route.path : null;
+    // let canonical;
+    // if (path) {
+    //   const pathWithSlash = path.endsWith("/") ? path : `${path}/`;
+    //   canonical = `http://nicestuff.me${pathWithSlash}`;
+    // }
 
     return {
       htmlAttrs: {
@@ -33,7 +35,7 @@ export default {
         ...i18nHead.meta,
       ],
       link: [
-        { rel: "canonical", href: canonical },
+        // { rel: "canonical", href: canonical },
         {
           rel: "preconnect",
           href: "https://fonts.googleapis.com",
@@ -46,7 +48,7 @@ export default {
           rel: "stylesheet",
           href: "https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;500;600;700;800&display=swap",
         },
-        ...i18nHead.link,
+        // ...i18nHead.link,
       ],
     };
   },
@@ -66,7 +68,7 @@ export default {
   sitemap: {
     hostname: "http://nicestuff.me",
     // gzip: true,
-    trailingSlashes: true,
+    // trailingSlashes: true,
   },
 
   // Global CSS: https://go.nuxtjs.dev/config-css
@@ -92,5 +94,8 @@ export default {
         autoprefixer: {},
       },
     },
+  },
+  router: {
+    trailingSlashes: false,
   },
 };
