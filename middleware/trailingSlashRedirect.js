@@ -3,7 +3,7 @@ export default function ({ route, redirect }) {
     const { path, query, hash } = route;
     const nextPath = path.replace(/\/+$/, "") || "/";
     const nextRoute = { path: nextPath, query, hash };
-
+    console.log(nextRoute);
     redirect(nextRoute);
   }
 }
