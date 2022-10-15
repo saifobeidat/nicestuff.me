@@ -22,7 +22,7 @@
           {{ $t("onlineboard.meta.title") }}
         </nuxt-link>
         <p>Draw or sketch on a whiteboard online and free without signup</p>
-        <p>Saif</p>
+        <p>Saif2</p>
       </div>
     </div>
   </div>
