@@ -95,7 +95,10 @@ export default {
       },
     },
   },
-  router: {
-    trailingSlashes: false,
+  // router: {
+  //   trailingSlash: false,
+  // },
+  generate: {
+    subFolders: false,
   },
 };

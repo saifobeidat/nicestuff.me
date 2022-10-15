@@ -25,13 +25,13 @@
     >
       <nav class="pt-16 px-4">
         <div>
-          <nuxt-link to="/online-note/" class="text-blue-600">
+          <nuxt-link to="/online-note" class="text-blue-600">
             {{ $t("menu.onlinenote") }}
           </nuxt-link>
         </div>
         <div class="my-3"></div>
         <div>
-          <nuxt-link to="/online-board/" class="text-blue-600">
+          <nuxt-link to="/online-board" class="text-blue-600">
             {{ $t("menu.onlineboard") }}
           </nuxt-link>
         </div>
@@ -56,10 +56,10 @@
       <Nuxt />
 
       <nav v-if="$route.path !== '/'" class="flex py-4 justify-center">
-        <nuxt-link to="/online-note/" class="text-blue-600 text-sm px-2">
+        <nuxt-link to="/online-note" class="text-blue-600 text-sm px-2">
           {{ $t("menu.onlinenote") }}
         </nuxt-link>
-        <nuxt-link to="/online-board/" class="text-blue-600 text-sm px-2">
+        <nuxt-link to="/online-board" class="text-blue-600 text-sm px-2">
           {{ $t("menu.onlineboard") }}
         </nuxt-link>
       </nav>
