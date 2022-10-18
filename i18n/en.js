@@ -23,7 +23,7 @@ export default {
     },
     heading: "Online note taking",
     paragragh:
-      "We offer you the free online tool, without signup. that helps you to write on a white paper or board so you can save your thoughts and memos and back to them anytime since we store them on your browser.",
+      "We offer you a free online tool, without signup. that helps you to write on a white paper or board so you can save your thoughts and memos and back to them anytime since we store them on your browser.",
   },
   menu: {
     onlineboard: "Online whiteboard drawer",

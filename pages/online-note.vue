@@ -42,6 +42,10 @@
 
     <br />
     <p class="text-xs lg:text-sm text-slate-500">
+      {{ $t("onlinenote.meta.description") }}
+    </p>
+
+    <p class="text-xs lg:text-sm text-slate-500">
       {{ $t("onlinenote.paragragh") }}
     </p>
   </div>

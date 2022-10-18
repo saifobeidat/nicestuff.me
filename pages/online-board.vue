@@ -71,7 +71,8 @@
     <br />
     <br />
     <p class="text-xs lg:text-sm text-slate-500">
-      {{ $t("onlinenote.paragragh") }}
+      {{ $t("onlineboard.meta.description") }}
+      {{ $t("onlineboard.paragragh") }}
     </p>
   </div>
 </template>
@@ -89,17 +90,19 @@ export default {
     "vue-drawing-canvas": VueDrawingCanvas,
   },
   setup: () => {},
-  head: {
-    title: "Free online whiteboard drawer",
-    meta: [
-      {
-        hid: "description",
-        name: "description",
-        content:
-          "Best digital online whiteboard tool, Draw now on blank board or paper.",
-      },
-    ],
+  head() {
+    return {
+      title: "Free online whiteboard drawer",
+      meta: [
+        {
+          hid: "description",
+          name: "description",
+          content: this.$t("onlineboard.meta.description"),
+        },
+      ],
+    };
   },
+
   name: "MyComponent",
 
   data() {
