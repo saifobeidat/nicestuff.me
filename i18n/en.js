@@ -11,9 +11,8 @@ export default {
       description:
         "Best digital online whiteboard tool, Draw now on blank board or paper.",
     },
-    heading: "Online whiteboard drawer",
-    paragragh:
-      "We offer you a free online whiteboard (blank paper), without signup. that helps you to draw or sketch on a white paper or board",
+    heading: "",
+    paragragh: "",
   },
   onlinenote: {
     meta: {

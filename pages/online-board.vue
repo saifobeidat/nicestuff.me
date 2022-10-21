@@ -1,7 +1,7 @@
 <template>
   <div>
     <!-- Tool Name  -->
-    <h1 class="lg:text-xl font-medium">{{ $t("onlineboard.heading") }}</h1>
+    <h1 class="lg:text-xl font-medium">Whiteboard Drawer</h1>
 
     <div class="mb-1 lg:mb-4">
       <!-- Space  -->
@@ -70,10 +70,12 @@
 
     <br />
     <br />
+    <h2>Website for Notepad Drawer</h2>
     <p class="text-xs lg:text-sm text-slate-500">
-      {{ $t("onlineboard.meta.description") }}
-      {{ $t("onlineboard.paragragh") }}
+      A tool to draw on whiteboard, or sketch on empty paper! . We provide you a
+      free paint tool for your quick drawings online!
     </p>
+    <p></p>
   </div>
 </template>
 
@@ -92,7 +94,7 @@ export default {
   setup: () => {},
   head() {
     return {
-      title: "Free online whiteboard drawer",
+      title: this.$t("onlineboard.meta.title"),
       meta: [
         {
           hid: "description",
