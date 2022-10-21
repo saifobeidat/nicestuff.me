@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/online-board", {data:[{}],fetch:{},mutations:void 0});
